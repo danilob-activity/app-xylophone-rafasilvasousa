@@ -27,18 +27,22 @@ public class MainActivity extends AppCompatActivity {
     private int mASoundId;
     private int mBSoundId;
 
+    private SoundPool mSoundPool;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // TODO: Create a new SoundPool
-
+        mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS,AudioManager.STREAM_MUSIC,0);
 
         // TODO: Load and get the IDs to identify the sounds
 
 
     }
+
+
 
     // TODO: Add the play methods triggered by the buttons
 
